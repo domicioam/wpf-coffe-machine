@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Coffe_Machine
+namespace Coffe_Machine.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

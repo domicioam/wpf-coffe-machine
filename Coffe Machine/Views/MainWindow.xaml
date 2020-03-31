@@ -1,10 +1,12 @@
-﻿<Window x:Class="Coffe_Machine.MainWindow"
+﻿<Window x:Class="Coffe_Machine.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prism="http://prismlibrary.com/"
         xmlns:local="clr-namespace:Coffe_Machine"
         mc:Ignorable="d"
+        prism:ViewModelLocator.AutoWireViewModel="True"
         Height="800" Width="700">
 
     <Window.Resources>
@@ -21,7 +23,7 @@
     </Window.Resources>
 
     <DockPanel>
-        <Label DockPanel.Dock="Top" Content="COFFE MACHINE 3000" />
+        <Label DockPanel.Dock="Top" Content="{Binding Title}" />
         <StackPanel DockPanel.Dock="Right" Margin="0,0,2,0">
             <StackPanel Orientation="Horizontal" 
                         Style="{StaticResource StackPanelWithPadding}">
